@@ -41,7 +41,7 @@ function Navbar() {
           </div>
         </div>
 
-        <div className="bg-black mt-5">
+        <div className="">
           <Item active={activeItem} />
         </div>
       </div>
@@ -65,7 +65,7 @@ function Navbar() {
           <div className="col-span-1">
             <button
               onClick={() => {
-                setactiveItem("About");
+                setactiveItem("about");
               }}
             >
               About
