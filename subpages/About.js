@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { services } from "../../public/data";
-import Particles_background from "../../public/particles/particles-background";
+import {services} from "../public/data"
 import ServiceCard from "../components/ServiceCard";
 
 function About() {

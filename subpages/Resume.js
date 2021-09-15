@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { languages, tools } from "../../public/data";
+import { languages, tools } from "../public/data";
 import Bar from "../components/Bar";
 
 

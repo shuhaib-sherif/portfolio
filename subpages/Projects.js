@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useState } from "react";
-import { projects as projectsData } from "../../public/data";
+import { projects as projectsData } from "../public/data";
 import ProjectCard from "../components/ProjectCard";
 import ProjectNav from "../components/ProjectNav";
 

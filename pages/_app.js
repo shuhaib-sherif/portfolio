@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
-import Navbar from "./components/Navbar";
-import Sidenav from "./components/Sidenav";
+import Sidenav from "../components/Sidenav"
+import Navbar from "../components/Navbar"
 import { ThemeProvider } from "next-themes";
 import { motion } from "framer-motion";
 import Particles_background from "../public/particles/particles-background";
