@@ -1,69 +1,80 @@
 import React, { useState } from "react";
 import Item from "./Item";
-import About from "../subpages/About";
-import Projects from "../subpages/Projects";
-import Resume from "../subpages/Resume";
 
 function Navbar() {
   const [activeItem, setactiveItem] = useState("about");
 
   if (activeItem === "about") {
     return (
-      <div className="flex-row">
-        <div className="lg:grid grid-cols-12 sm:flex flex-row-3">
-          <div className="lg:col-span-10 text-xl font-bold">
+      <>
+        <div className="flex items-center justify-between px-5 py-3 my-3">
+          <span className="text-2xl font-extrabold  text-green-600  md:text-2xl ">
             <button
-              className="px-2 sm:pl-30"
+              className="underline"
               onClick={() => {
                 setactiveItem("about");
               }}
             >
               About
             </button>
-          </div>
-          <div className="lg:col-span-1">
+          </span>
+
+          <div className="text-base font-normal md:text-xl">
             <button
+              className="
+                      dark:text-yellow-100 text2xl px-2 sm:pl-30 "
               onClick={() => {
                 setactiveItem("Resume");
               }}
             >
               Resume
             </button>
-          </div>
-          <div className="lg:col-span-1">
             <button
+              className="
+                      dark:text-yellow-100 text2xl px-2 sm:pl-30 "
               onClick={() => {
                 setactiveItem("Projects");
               }}
             >
-              Projects
+             Projects
             </button>
           </div>
         </div>
-
         <div className="">
           <Item active={activeItem} />
         </div>
-      </div>
+      </>
     );
   }
 
   if (activeItem === "Resume") {
     return (
-      <div className="flex-row">
-        <div className="lg:grid grid-cols-12 sm:flex flex-row-3">
-          <div className="col-span-10 text-xl font-bold">
+      <>
+        <div className="flex items-center justify-between px-5 py-3 my-3">
+          <span className="text-2xl font-extrabold  text-green-600 underline md:text-2xl">
             <button
-              className="pl-3  sm:pl-30"
+              className="underline"
               onClick={() => {
                 setactiveItem("Resume");
               }}
             >
               Resume
             </button>
-          </div>
-          <div className="col-span-1">
+          </span>
+
+          <div className="text-base font-normal md:text-xl">
             <button
+              className="
+                        dark:text-yellow-100 text2xl px-2 sm:pl-30 "
+              onClick={() => {
+                setactiveItem("Projects");
+              }}
+            >
+              Projects
+            </button>
+            <button
+              className="
+                        dark:text-yellow-100 text2xl px-2 sm:pl-30 "
               onClick={() => {
                 setactiveItem("about");
               }}
@@ -71,49 +82,42 @@ function Navbar() {
               About
             </button>
           </div>
-          <div className="col-span-1">
-            <button
-              onClick={() => {
-                setactiveItem("Projects");
-              }}
-            >
-              Projects
-            </button>
-          </div>
         </div>
-
-        <div>
+        <div className="">
           <Item active={activeItem} />
         </div>
-     </div>
+      </>
     );
   }
 
   if (activeItem === "Projects") {
     return (
-      <div className="flex-row">
-        <div className="lg:grid grid-cols-12 sm:flex flex-row-3">
-          <div className="col-span-10 text-xl font-bold">
+      <>
+        <div className="flex items-center justify-between px-5 py-3 my-3">
+          <span className="text-2xl font-extrabold  text-green-600 underline md:text-2xl">
             <button
-              className="pl-3 sm:pl-30"
+              className="underline"
               onClick={() => {
                 setactiveItem("Projects");
               }}
             >
-              Projects
+             Projects
             </button>
-          </div>
-          <div className="col-span-1">
+          </span>
+
+          <div className="text-base font-normal md:text-xl">
             <button
+              className="
+                        dark:text-yellow-100 text-xl px-2 sm:pl-30 "
               onClick={() => {
                 setactiveItem("about");
               }}
             >
               About
             </button>
-          </div>
-          <div className="col-span-1">
             <button
+              className="
+                        dark:text-yellow-100 text-xl px-2 sm:pl-30 "
               onClick={() => {
                 setactiveItem("Resume");
               }}
@@ -122,10 +126,10 @@ function Navbar() {
             </button>
           </div>
         </div>
-        <div>
+        <div className="">
           <Item active={activeItem} />
         </div>
-      </div>
+      </>
     );
   }
 }
