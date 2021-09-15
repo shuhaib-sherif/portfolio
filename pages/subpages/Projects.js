@@ -44,7 +44,7 @@ function Projects() {
 
       <motion.div className="relative grid grid-cols-12 gap-4 my-3" variants={variants} initial="initial" animate='animate'>
         {projects.map((project) => (
-          <div className="col-span-12 p-2 bg-gray-200 text-black  rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
+          <div key={project.name}  className="col-span-12 p-2 bg-gray-200 text-black  rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
             <ProjectCard 
             
              name= {project.name}
@@ -54,7 +54,7 @@ function Projects() {
              description={project.description}
              github_url={project.github_url}
              key_techs={project.key_techs}            
-            key={project.name} />
+            />
           </div>
         ))}
       </motion.div>
