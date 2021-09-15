@@ -20,20 +20,20 @@ function Sidenav() {
   };
 
   return (
-    <div class="flex flex-col justify-center gap-4 py-5 px-5">
-      <div class="flex flex-row justify-center">
+    <div className="flex flex-col justify-center gap-4 py-5 px-5">
+      <div className="flex flex-row justify-center">
         <img
           src="./assets/mypic3.jpeg"
           alt="image"
-          class="rounded-full h-40 w-40 flex items-center justify-center"
+          className="rounded-full h-40 w-40 flex items-center justify-center"
         />
       </div>
 
-      <div class="flex flex-row justify-center">
+      <div className="flex flex-row justify-center">
         <h1 className="font-custom2 text-2xl font-large transform motion-safe:hover:scale-110"> Shuhaib Sherif </h1>
       </div>
 
-      <div class="flex flex-row justify-center text-2xl rounded-full py-3 px-1 font-medium text-blue-400 font-custom3 ">
+      <div className="flex flex-row justify-center text-2xl rounded-full py-3 px-1 font-medium text-blue-400 font-custom3 ">
         <TypewriterComponent
           options={{
             strings: ["Web Developer", "Competitive Programmer"],
@@ -45,19 +45,19 @@ function Sidenav() {
 
    </div>
 
-      <div class="flex flex-row justify-center rounded-full py-3 px-6 bg-green-500 cursor-pointer hover:bg-green-800">
+      <div className="flex flex-row justify-center rounded-full py-3 px-6 bg-green-500 cursor-pointer hover:bg-green-800">
         
         <a href="/assets/resume.pdf" download="resume">Download Resume</a>
       </div>
-      <div class="flex flex-row justify-center gap-10 ">
+      <div className="flex flex-row justify-center gap-10 ">
         <a href="https://www.linkedin.com/in/shuhaib-sherif-8a75001a6/" >
-          <IoLogoLinkedin class="w-8 h-8 cursor-pointer"/>
+          <IoLogoLinkedin className="w-8 h-8 cursor-pointer"/>
         </a>
         <a href="https://github.com/shuhaib-sherif">
-          <IoLogoGithub class="w-8 h-8 cursor-pointer" />
+          <IoLogoGithub className="w-8 h-8 cursor-pointer" />
         </a>
         <a href="https://www.instagram.com/shuhaib_sherif/">
-          <IoLogoInstagram class="w-8 h-8 cursor-pointer" />
+          <IoLogoInstagram className="w-8 h-8 cursor-pointer" />
         </a>
       </div>
 
@@ -78,7 +78,7 @@ function Sidenav() {
         </div>
       </div>
 
-      <div class="flex flex-row justify-center rounded-full py-3 px-6 bg-green-500 cursor-pointer hover:bg-green-800">
+      <div className="flex flex-row justify-center rounded-full py-3 px-6 bg-green-500 cursor-pointer hover:bg-green-800">
         <button className="w-full"
           onClick={() => {
             window.open("mailto:shuhaibsherif@gmail.com");
@@ -87,7 +87,7 @@ function Sidenav() {
           Email Me
         </button>
       </div>
-      <div class="flex flex-row justify-center rounded-full py-3 px-6 bg-green-500 cursor-pointer hover:bg-green-800">
+      <div className="flex flex-row justify-center rounded-full py-3 px-6 bg-green-500 cursor-pointer hover:bg-green-800">
         <button onClick={determineTheme} className="w-full">
           {theme === "light" ? "Dark" : "Light"}
         </button>
